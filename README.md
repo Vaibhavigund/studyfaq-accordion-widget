@@ -7,19 +7,17 @@ A modern and responsive FAQ website designed to help students quickly find answe
 🔗 https://your-live-demo-link.com
 
 ## Screenshots
-
 ### Home
-![Home](assets/home.png)
+![Home](assets/screenshots/home.png)
 
 ### Programming Topics
-![Topics](assets/topics.png)
+![Topics](assets/screenshots/topics.png)
 
 ### FAQ Section
-![FAQ](assets/faq.png)
+![FAQ](assets/screenshots/faq.png)
 
 ### Dark Mode
-![Dark Mode](assets/dark-mode.png)
----
+![Dark Mode](assets/screenshots/darkmode.png)
 
 ## Features
 
@@ -49,21 +47,22 @@ A modern and responsive FAQ website designed to help students quickly find answe
 
 ```text
 StudyFAQ/
-   index.html
-│   README.md
-│   
-├───assets
-│       darkmode.png.png
-│       faq.png.png
-│       home.png.png
-│       topics.png.png
-│       
-├───css
-│       style.css
-│       
-└───js
-        main.js
-        
+│
+├── assets/
+│   └── screenshots/
+│       ├── home.png
+│       ├── topics.png
+│       ├── faq.png
+│       └── darkmode.png
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── main.js
+│
+├── index.html
+└── README.md
 ```
 
 ---
