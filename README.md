@@ -6,9 +6,9 @@ A modern and responsive FAQ website designed to help students quickly find answe
 
 🔗 https://your-live-demo-link.com
 
-##  Screenshots
+## Screenshots
 
-### Home Page
+### Home
 ![Home](assets/screenshots/home.png)
 
 ### Programming Topics
@@ -18,8 +18,7 @@ A modern and responsive FAQ website designed to help students quickly find answe
 ![FAQ](assets/screenshots/faq.png)
 
 ### Dark Mode
-![Dark Mode](assets/screenshots/darkmode.png)
-
+![Dark Mode](assets/screenshots/dark-mode.png)
 ---
 
 ## Features
