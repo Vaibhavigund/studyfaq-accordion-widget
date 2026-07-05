@@ -4,7 +4,7 @@ A modern and responsive FAQ website designed to help students quickly find answe
 
 ##  Live Demo
 
-🔗 https://your-live-demo-link.com
+🔗 https://vaibhavigund.github.io/studyfaq-accordion-widget/
 
 ## Screenshots
 ### Home
