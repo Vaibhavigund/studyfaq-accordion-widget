@@ -166,6 +166,7 @@
         <div class="section-header">
             <div class="section-title-wrapper">
                 <h2 class="section-title">Programming Topics</h2>
+                <p class="section-subtitle">Select a topic to filter questions or browse all</p>
             </div>
             <div class="faq-controls">
                 <button class="control-btn" id="expandAll">
@@ -178,9 +179,45 @@
         </div>
         
         <div class="category-filter">
-            <!-- Your category buttons remain exactly the same -->
+            <button class="category-btn active" data-category="all">
+                <i class="fas fa-th"></i>
+                <span>All Topics</span>
+            </button>
+            <button class="category-btn" data-category="html">
+                <i class="fab fa-html5"></i>
+                <span>HTML</span>
+            </button>
+            <button class="category-btn" data-category="css">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS</span>
+            </button>
+            <button class="category-btn" data-category="javascript">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+            </button>
+            <button class="category-btn" data-category="java">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+            </button>
+            <button class="category-btn" data-category="android">
+                <i class="fab fa-android"></i>
+                <span>Android</span>
+            </button>
+            <button class="category-btn" data-category="git">
+                <i class="fab fa-git-alt"></i>
+                <span>Git & GitHub</span>
+            </button>
+            <button class="category-btn" data-category="sql">
+                <i class="fas fa-database"></i>
+                <span>SQL</span>
+            </button>
+            <button class="category-btn" data-category="interview">
+                <i class="fas fa-user-tie"></i>
+                <span>Interview</span>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- FAQ Section -->
     <section class="faq-section" id="faqs">
