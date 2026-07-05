@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudyFAQ - Student Learning Help Center for HTML, CSS, JavaScript, Java, Android, Git, SQL and Interview Questions">
+    <title>StudyFAQ - Student Learning Help Center</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Floating Code Symbols (Programming Theme) -->
+    <div class="code-symbols">
+        <span class="symbol" style="top: 10%; left: 5%;">&lt;/&gt;</span>
+        <span class="symbol" style="top: 20%; right: 8%;">{ }</span>
+        <span class="symbol" style="top: 60%; left: 3%;">[ ]</span>
+        <span class="symbol" style="bottom: 15%; right: 5%;">( )</span>
+        <span class="symbol" style="top: 40%; right: 12%;">&lt;div&gt;</span>
+        <span class="symbol" style="bottom: 25%; left: 8%;">func()</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Study<span class="logo-accent">FAQ</span></span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - Two Column Layout -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Column: Content -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Programming FAQ Reference</span>
+                    </div>
+                    <h1 class="hero-title">Student Learning Help Center</h1>
+                    <p class="hero-subtitle">Explore frequently asked questions on HTML, CSS, JavaScript, Java, Android, Git, SQL and interview preparation. Quickly find clear explanations for common programming concepts.</p>
+                </div>
+                
+                <!-- Right Column: Illustration -->
+                <div class="hero-illustration">
+                    <div class="illustration-container">
+                        <!-- Code Editor Window -->
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="window-title">learning.js</span>
+                            </div>
+                            <div class="window-body">
+                                <div class="code-line"><span class="code-keyword">function</span> <span class="code-function">learnProgramming</span>() {</div>
+                                <div class="code-line indent1"><span class="code-keyword">const</span> <span class="code-variable">knowledge</span> = <span class="code-string">"unlimited"</span>;</div>
+                                <div class="code-line indent1"><span class="code-keyword">while</span> (<span class="code-variable">student</span>.<span class="code-property">isCurious</span>) {</div>
+                                <div class="code-line indent2"><span class="code-variable">student</span>.<span class="code-function">learn</span>();</div>
+                                <div class="code-line indent2"><span class="code-variable">student</span>.<span class="code-function">practice</span>();</div>
+                                <div class="code-line indent2"><span class="code-variable">student</span>.<span class="code-function">grow</span>();</div>
+                                <div class="code-line indent1">}</div>
+                                <div class="code-line">}</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Tech Icons -->
+                        <div class="tech-icons">
+                            <div class="tech-icon html-icon" style="top: 15%; left: -10%;">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="tech-icon css-icon" style="top: 40%; right: -15%;">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="tech-icon js-icon" style="bottom: 20%; left: -15%;">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="tech-icon react-icon" style="bottom: 10%; right: -10%;">
+                                <i class="fab fa-react"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistics Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">8</h3>
+                        <p class="stat-label">Programming Topics</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">30+</h3>
+                        <p class="stat-label">FAQ Questions</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">100%</h3>
+                        <p class="stat-label">Responsive Design</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">Easy</h3>
+                        <p class="stat-label">Beginner Friendly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter Section -->
+<section class="category-section" id="topics">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Programming Topics</h2>
+            </div>
+            <div class="faq-controls">
+                <button class="control-btn" id="expandAll">
+                    <i class="fas fa-plus-circle"></i> Expand All
+                </button>
+                <button class="control-btn" id="collapseAll">
+                    <i class="fas fa-minus-circle"></i> Collapse All
+                </button>
+            </div>
+        </div>
+        
+        <div class="category-filter">
+            <!-- Your category buttons remain exactly the same -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faqs">
+        <div class="container">
+            
+            <!-- Empty State (Hidden by default) -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>No questions found</h3>
+                <p>Try selecting a different category to find what you're looking for.</p>
+            </div>
+
+            <!-- FAQ Container -->
+            <div class="faq-container" id="faqContainer">
+                
+                <!-- HTML Questions -->
+                <div class="faq-card" data-category="html">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge html">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <h3>What is HTML and why is it important?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It provides the structure and content of websites by using various elements and tags. HTML is important because it forms the foundation of web development, allowing browsers to interpret and display content correctly. Every website you visit uses HTML to organize text, images, links, and other media.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="html">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge html">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <h3>What is the difference between HTML elements and tags?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>HTML tags are the markup syntax using angle brackets (e.g., &lt;p&gt;, &lt;div&gt;), while an HTML element consists of the opening tag, content, and closing tag together. For example, &lt;p&gt; is a tag, but &lt;p&gt;Hello World&lt;/p&gt; is a complete paragraph element. Tags are the code, elements are the complete structure.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="html">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge html">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <h3>What are semantic HTML elements?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Semantic HTML elements clearly describe their meaning and purpose both to the browser and developer. Examples include &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, and &lt;footer&gt;. These elements improve code readability, accessibility, and SEO compared to generic &lt;div&gt; elements. They help screen readers and search engines better understand the content structure.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="html">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge html">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <h3>How do you create a hyperlink in HTML?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You create hyperlinks using the &lt;a&gt; (anchor) tag with the href attribute. For example: &lt;a href="https://example.com"&gt;Click here&lt;/a&gt;. You can also use target="_blank" to open links in a new tab, and the href attribute can point to external URLs, internal pages, email addresses (mailto:), or page sections using IDs (#section).</p>
+                    </div>
+                </div>
+
+                <!-- CSS Questions -->
+                <div class="faq-card" data-category="css">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge css">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <h3>What is CSS and how does it work with HTML?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CSS (Cascading Style Sheets) is a styling language used to control the presentation and layout of HTML elements. While HTML provides structure, CSS adds visual styling like colors, fonts, spacing, and positioning. CSS works by selecting HTML elements and applying style rules to them. It can be added inline, internally in a &lt;style&gt; tag, or externally in separate .css files.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="css">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge css">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <h3>What is the box model in CSS?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The CSS box model is a fundamental concept that describes how elements are rendered. Every element is a rectangular box consisting of four areas: content (the actual content), padding (space around content), border (surrounds the padding), and margin (space outside the border). Understanding the box model is crucial for controlling layout and spacing. Use box-sizing: border-box to include padding and border in the element's total width and height.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="css">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge css">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <h3>What is the difference between Flexbox and Grid?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Flexbox is a one-dimensional layout system designed for arranging items in rows or columns, ideal for component layouts and alignment. CSS Grid is a two-dimensional system that handles both rows and columns simultaneously, perfect for complex page layouts. Use Flexbox for navigation bars, card layouts, and centering. Use Grid for overall page structure, photo galleries, and complex multi-column designs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="css">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge css">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <h3>How do CSS selectors work?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CSS selectors target HTML elements to apply styles. Common selectors include: element selectors (p, div), class selectors (.className), ID selectors (#idName), attribute selectors ([type="text"]), and pseudo-classes (:hover, :first-child). You can combine selectors for more specific targeting. Understanding selector specificity is important as it determines which styles are applied when multiple rules conflict.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="css">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge css">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <h3>What are CSS preprocessors like Sass and why use them?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CSS preprocessors like Sass, Less, and Stylus extend CSS with features like variables, nesting, mixins, functions, and imports. They compile to regular CSS. Benefits include: better organization with nesting, reusable code with mixins, mathematical operations, color functions, and modular code structure. Preprocessors make large stylesheets more maintainable, reduce repetition, and enable more powerful styling capabilities while keeping the output as standard CSS.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="css">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge css">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <h3>How do you make a website responsive?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Make websites responsive using: 1) Flexible grid layouts with percentages or CSS Grid/Flexbox. 2) Media queries to apply different styles at different screen sizes. 3) Responsive images using max-width: 100%. 4) Viewport meta tag for proper mobile scaling. 5) Relative units (em, rem, %, vw, vh) instead of fixed pixels. 6) Mobile-first approach. 7) Testing on actual devices. Modern CSS features like clamp(), min(), and max() also help create truly responsive designs.</p>
+                    </div>
+                </div>
+
+                <!-- JavaScript Questions -->
+                <div class="faq-card" data-category="javascript">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge javascript">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3>What is JavaScript and what is it used for?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>JavaScript is a high-level, interpreted programming language that adds interactivity and dynamic behavior to websites. It runs in the browser and can manipulate HTML and CSS, respond to user events, make HTTP requests, store data, and much more. JavaScript is essential for modern web development and is also used for server-side development (Node.js), mobile apps, desktop applications, and game development.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="javascript">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge javascript">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3>What is the difference between let, const, and var?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>var is function-scoped, can be redeclared and updated, and is hoisted. let is block-scoped, cannot be redeclared but can be updated, and is also hoisted but not initialized. const is block-scoped, cannot be redeclared or reassigned, and must be initialized when declared. Modern JavaScript best practices recommend using const by default, let when you need to reassign, and avoiding var entirely.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="javascript">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge javascript">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3>What are arrow functions in JavaScript?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Arrow functions are a shorter syntax for writing functions introduced in ES6. They use the => syntax. For example: const add = (a, b) => a + b. Arrow functions have lexical 'this' binding, meaning they inherit 'this' from their parent scope. They're great for callbacks and short functions but cannot be used as constructors and don't have their own arguments object.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="javascript">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge javascript">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3>What is the DOM and how do you manipulate it?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The DOM (Document Object Model) is a programming interface that represents HTML documents as a tree structure of objects. JavaScript can manipulate the DOM to change content, structure, and styling dynamically. Common methods include getElementById(), querySelector(), createElement(), appendChild(), and manipulating properties like innerHTML, textContent, and classList. Understanding DOM manipulation is fundamental to creating interactive web pages.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="javascript">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge javascript">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3>What is event delegation in JavaScript?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Event delegation is a technique where you attach a single event listener to a parent element instead of multiple listeners to child elements. It leverages event bubbling to handle events on child elements. This improves performance, uses less memory, and works for dynamically added elements. For example, instead of adding click listeners to all list items, add one to the parent ul and check event.target to determine which item was clicked.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="javascript">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge javascript">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3>What are Promises and async/await in JavaScript?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Promises represent the eventual completion or failure of an asynchronous operation. They have three states: pending, fulfilled, or rejected. Promises use .then() for success and .catch() for errors. Async/await is syntactic sugar built on Promises, making asynchronous code look synchronous and easier to read. Use 'async' before a function and 'await' before Promises. Always wrap await calls in try/catch blocks for error handling.</p>
+                    </div>
+                </div>
+
+                <!-- Java Questions -->
+                <div class="faq-card" data-category="java">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge java">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <h3>What is Java and where is it used?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Java is a high-level, object-oriented programming language known for its "write once, run anywhere" philosophy. It's platform-independent because Java code compiles to bytecode that runs on the Java Virtual Machine (JVM). Java is widely used for enterprise applications, Android app development, web applications, big data technologies, scientific applications, and backend systems. It's valued for its reliability, security, and scalability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="java">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge java">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <h3>What is the difference between JDK, JRE, and JVM?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>JVM (Java Virtual Machine) executes Java bytecode and provides platform independence. JRE (Java Runtime Environment) includes the JVM plus libraries needed to run Java applications. JDK (Java Development Kit) includes the JRE plus development tools like compilers and debuggers needed to develop Java applications. Developers need JDK, while end-users only need JRE to run Java programs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="java">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge java">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <h3>What are the main principles of Object-Oriented Programming in Java?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The four main OOP principles are: 1) Encapsulation - bundling data and methods that operate on that data within classes, hiding internal details. 2) Inheritance - creating new classes from existing ones to promote code reuse. 3) Polymorphism - objects taking many forms, allowing methods to do different things based on the object. 4) Abstraction - hiding complex implementation details and showing only necessary features.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="java">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge java">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <h3>What is the difference between String, StringBuilder, and StringBuffer?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>String is immutable - once created, it cannot be changed. Every modification creates a new String object. StringBuilder is mutable and not thread-safe, making it faster for single-threaded scenarios. StringBuffer is also mutable but thread-safe (synchronized), making it slower but safe for multi-threaded environments. Use String for constant values, StringBuilder for single-threaded string manipulation, and StringBuffer for multi-threaded scenarios.</p>
+                    </div>
+                </div>
+
+                <!-- Android Questions -->
+                <div class="faq-card" data-category="android">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge android">
+                                <i class="fab fa-android"></i>
+                                <span>Android</span>
+                            </div>
+                            <h3>What is Android and how does Android development work?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Android is an open-source mobile operating system based on Linux, developed by Google. Android development involves creating applications for Android devices using languages like Java or Kotlin. Development is typically done in Android Studio, Google's official IDE. Android apps consist of components like Activities, Services, Broadcast Receivers, and Content Providers, with UI designed using XML layouts or Jetpack Compose.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="android">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge android">
+                                <i class="fab fa-android"></i>
+                                <span>Android</span>
+                            </div>
+                            <h3>What is an Activity in Android?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>An Activity represents a single screen with a user interface in an Android app. It's a crucial component that users interact with. Activities have a lifecycle with methods like onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy() that the system calls as the activity moves through different states. Understanding the activity lifecycle is essential for managing resources, saving state, and creating responsive apps.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="android">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge android">
+                                <i class="fab fa-android"></i>
+                                <span>Android</span>
+                            </div>
+                            <h3>What is the difference between Intent and Intent Filter?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>An Intent is a messaging object used to request an action from another component, like starting an activity or service. There are explicit intents (specifying the component) and implicit intents (declaring a general action). Intent Filters are declared in the manifest and specify what types of intents a component can receive. They define actions, categories, and data types that an activity, service, or broadcast receiver can handle.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="android">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge android">
+                                <i class="fab fa-android"></i>
+                                <span>Android</span>
+                            </div>
+                            <h3>What is RecyclerView and why use it instead of ListView?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>RecyclerView is an advanced and flexible version of ListView for displaying large datasets. It recycles views that are no longer visible, improving performance and memory usage. RecyclerView requires a ViewHolder pattern, supports different layout managers (Linear, Grid, Staggered), provides better animations, and allows more customization. It's the modern standard for displaying lists in Android and offers better performance than ListView.</p>
+                    </div>
+                </div>
+
+                <!-- Git & GitHub Questions -->
+                <div class="faq-card" data-category="git">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge git">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <h3>What is Git and why is it important?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Git is a distributed version control system that tracks changes in source code during software development. It allows multiple developers to work together, maintains a complete history of changes, enables reverting to previous versions, and supports branching and merging. Git is essential for modern software development as it provides collaboration, backup, and the ability to experiment without affecting the main codebase.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="git">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge git">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <h3>What is the difference between Git and GitHub?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Git is the version control system software that runs locally on your computer, tracking changes in your code. GitHub is a cloud-based hosting service for Git repositories that provides a web interface, collaboration features, issue tracking, pull requests, and social coding features. Git works offline and is the tool itself, while GitHub is an online platform that makes it easier to collaborate and share Git repositories with others.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="git">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge git">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <h3>What are the basic Git commands every developer should know?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Essential Git commands include: git init (initialize a repository), git clone (copy a repository), git add (stage changes), git commit (save changes), git push (upload to remote), git pull (download from remote), git status (check status), git branch (manage branches), git checkout (switch branches), git merge (combine branches), and git log (view history). Mastering these commands is fundamental to using Git effectively.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="git">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge git">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <h3>What is a branch in Git and why use branching?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A branch is an independent line of development in Git that allows you to work on features or fixes without affecting the main codebase. The default branch is usually called 'main' or 'master'. Branching allows developers to experiment, develop features in isolation, collaborate without conflicts, and maintain different versions. Common practices include creating feature branches, development branches, and release branches to organize workflow effectively.</p>
+                    </div>
+                </div>
+
+                <!-- SQL Questions -->
+                <div class="faq-card" data-category="sql">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge sql">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <h3>What is SQL and what is it used for?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SQL (Structured Query Language) is a standard language for managing and manipulating relational databases. It's used to create, read, update, and delete data (CRUD operations), define database structure, control access, and query data. SQL is essential for backend development, data analysis, and working with databases like MySQL, PostgreSQL, Oracle, and SQL Server. Learning SQL is crucial for any developer working with data-driven applications.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="sql">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge sql">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <h3>What is the difference between SQL and NoSQL databases?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SQL databases are relational, use structured schemas with tables and relationships, and use SQL for queries. They ensure ACID properties and are great for complex queries and transactions. NoSQL databases are non-relational, have flexible schemas, and can be document-based, key-value, graph, or column-family. They're designed for scalability and handling large volumes of unstructured data. Choose SQL for structured data with complex relationships, NoSQL for flexibility and horizontal scaling.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="sql">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge sql">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <h3>What are primary keys and foreign keys?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A primary key is a column or set of columns that uniquely identifies each row in a table. It must contain unique values and cannot be NULL. Each table can have only one primary key. A foreign key is a column that creates a relationship between two tables by referencing the primary key of another table. Foreign keys maintain referential integrity and enable database relationships, allowing you to connect related data across tables.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="sql">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge sql">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <h3>What are JOINs in SQL and what types exist?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>JOINs combine rows from two or more tables based on related columns. Main types include: INNER JOIN (returns matching rows from both tables), LEFT JOIN (all rows from left table, matching from right), RIGHT JOIN (all rows from right table, matching from left), and FULL OUTER JOIN (all rows from both tables). Understanding JOINs is essential for working with relational databases and retrieving data from multiple related tables.</p>
+                    </div>
+                </div>
+
+                <!-- Interview Questions -->
+                <div class="faq-card" data-category="interview">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge interview">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Interview</span>
+                            </div>
+                            <h3>How should I prepare for a frontend developer interview?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Prepare by mastering HTML, CSS, and JavaScript fundamentals. Practice coding challenges on platforms like LeetCode or HackerRank. Build projects to showcase your skills. Study common interview topics: responsive design, browser compatibility, performance optimization, accessibility, and modern frameworks. Review data structures and algorithms. Prepare questions about the company. Practice explaining your thought process. Have a portfolio ready and be prepared to discuss your projects in detail.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="interview">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge interview">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Interview</span>
+                            </div>
+                            <h3>What are common behavioral interview questions?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Common questions include: "Tell me about yourself", "Why do you want this job?", "Describe a challenging project", "How do you handle conflicts?", "What's your biggest weakness?", "Where do you see yourself in 5 years?", and "Tell me about a time you failed". Use the STAR method (Situation, Task, Action, Result) to structure answers. Be honest, specific, and focus on what you learned and how you grew from experiences.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="interview">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge interview">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Interview</span>
+                            </div>
+                            <h3>What questions should I ask the interviewer?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ask about: the team structure and who you'd work with, day-to-day responsibilities, technologies and tools used, code review process, professional development opportunities, company culture and values, current challenges the team faces, success metrics for the role, and next steps in the hiring process. Asking thoughtful questions shows genuine interest and helps you determine if the role is right for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-category="interview">
+                    <div class="faq-question">
+                        <div class="faq-header">
+                            <div class="category-badge interview">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Interview</span>
+                            </div>
+                            <h3>How do I explain gaps in my resume or lack of experience?</h3>
+                        </div>
+                        <button class="faq-toggle" aria-label="Toggle answer" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Be honest and positive. Focus on what you did during gaps: learning, personal projects, freelancing, volunteering, or personal circumstances. Emphasize transferable skills and how you've grown. For lack of experience, highlight relevant projects, coursework, bootcamps, self-learning, and enthusiasm to learn. Demonstrate your passion through portfolio projects and knowledge of current technologies. Show how your unique background provides valuable perspective.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Resources Section -->
+    <section class="resources-section" id="contact">
+        <div class="container">
+            <div class="resources-header">
+                <h2>Official Documentation</h2>
+                <p>Explore official resources to deepen your understanding</p>
+            </div>
+            
+            <div class="resources-grid">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon html">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>HTML</h3>
+                        <p>MDN Web Docs</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+                
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon css">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>CSS</h3>
+                        <p>MDN Web Docs</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+                
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon javascript">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>JavaScript</h3>
+                        <p>MDN Web Docs</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+                
+                <a href="https://docs.oracle.com/en/java/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon java">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Java</h3>
+                        <p>Oracle Docs</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+                
+                <a href="https://developer.android.com/docs" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon android">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Android</h3>
+                        <p>Android Developers</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+                
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Git</h3>
+                        <p>Official Documentation</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+                
+                <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon sql">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>SQL</h3>
+                        <p>W3Schools Tutorial</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+                
+                <a href="https://www.frontendinterviewhandbook.com/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    <div class="resource-icon interview">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Interview Prep</h3>
+                        <p>Frontend Handbook</p>
+                    </div>
+                    <i class="fas fa-external-link-alt resource-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>StudyFAQ</span>
+                </div>
+                
+                <div class="footer-section">
+                    <p>Student Learning Help Center for programming FAQs covering HTML, CSS, JavaScript, Java, Android, Git & GitHub, SQL, and Interview Preparation.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p> Student Learning Help Center. Built using HTML, CSS & JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
