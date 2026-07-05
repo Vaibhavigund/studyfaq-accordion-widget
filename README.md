@@ -9,16 +9,16 @@ A modern and responsive FAQ website designed to help students quickly find answe
 ## Screenshots
 
 ### Home
-![Home](assets/screenshots/home.png)
+![Home](assets/home.png)
 
 ### Programming Topics
-![Topics](assets/screenshots/topics.png)
+![Topics](assets/topics.png)
 
 ### FAQ Section
-![FAQ](assets/screenshots/faq.png)
+![FAQ](assets/faq.png)
 
 ### Dark Mode
-![Dark Mode](assets/screenshots/dark-mode.png)
+![Dark Mode](assets/dark-mode.png)
 ---
 
 ## Features
@@ -49,16 +49,21 @@ A modern and responsive FAQ website designed to help students quickly find answe
 
 ```text
 StudyFAQ/
-│
-├── assets/
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── main.js
-│
-└── index.html
+   index.html
+│   README.md
+│   
+├───assets
+│       darkmode.png.png
+│       faq.png.png
+│       home.png.png
+│       topics.png.png
+│       
+├───css
+│       style.css
+│       
+└───js
+        main.js
+        
 ```
 
 ---
